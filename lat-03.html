@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Latihan 03</title>
+</head>
+
+<body>
+    <h1>Latihan 3</h1>
+    <p>Nilai terbesar disimpan di dalam localStorage</p>
+    <form action="" onsubmit="simpanAngka()">
+        <input type="number" name="angka" id="angka">
+        <button type="submit" id="simpan">Simpan</button>
+    </form>
+    
+
+    <script>
+        // if (!localStorage.getItem("scores")) {
+            let array = [];
+            let scores = JSON.stringify(array);
+            localStorage.setItem("scores", scores);
+        // }
+
+        function simpanAngka() {
+            let angka = document.getElementById("angka").value;
+            array.push(angka);
+            let scores = JSON.stringify(array);
+            localStorage.setItem("scores", scores);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
