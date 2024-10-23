@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 01</title>
+</head>
+<body>
+    <h1>Latihan 1</h1>
+    <p>Nilai yang dimasukkan akan tersimpan di dalam localStorage</p>
+    <form action="" onsubmit="simpanAngka()">
+        <input type="number" name="angka" id="angka">
+        <button type="submit">Simpan</button>
+    </form>
+
+    <script>
+        function simpanAngka() {
+            let angka = document.getElementById("angka").value;
+            localStorage.setItem("score", angka);
+        }
+    </script>
+</body>
+</html>

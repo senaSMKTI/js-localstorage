@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan 02</title>
+</head>
+<body>
+    <h1>Latihan 2</h1>
+    <p>Nilai terbesar disimpan di dalam localStorage</p>
+    <form action="" onsubmit="simpanAngka()">
+        <input type="number" name="angka" id="angka">
+        <button type="submit">Simpan</button>
+    </form>
+
+    <script>
+        function simpanAngka() {
+            let angka = document.getElementById("angka").value;
+
+            // tambahkan kode agar apabila ada nilai yang telah tersimpan di localstorage
+            // maka nilai yang lebih besar yang akan disimpan
+
+            localStorage.setItem("score", angka);
+        }
+    </script>
+</body>
+</html>
